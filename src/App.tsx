@@ -1,26 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { CatContext } from "./Core/context/CatContext";
+import Cat from "./Ui/screen/Cat";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  const [page, setPage] = useState<number>(0);
+
+  return <CatContext.Provider value={{ page: page, toggle: setPage }}>
+    <Cat></Cat>
+  </CatContext.Provider>
 }
 
 export default App;
