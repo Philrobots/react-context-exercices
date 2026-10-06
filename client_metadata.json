@@ -1,0 +1,9 @@
+{
+  "client_id": "https://gist.githubusercontent.com/<user>/<gist-id>/raw/inspector-client-metadata.json",
+  "client_name": "MCP Inspector (CIMD test)",
+  "redirect_uris": [
+    "http://localhost:6274/oauth/callback",
+    "http://localhost:6274/oauth/callback/debug"
+  ],
+  "token_endpoint_auth_method": "none"
+}
