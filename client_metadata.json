@@ -1,5 +1,5 @@
 {
-  "client_id": "https://github.com/Philrobots/react-context-exercices/blob/test-mcp-inspector-metadata-url/client_metadata.json",
+  "client_id": "https://raw.githubusercontent.com/Philrobots/react-context-exercices/refs/heads/test-mcp-inspector-metadata-url/client_metadata.json",
   "client_name": "MCP Inspector (CIMD test)",
   "redirect_uris": [
     "http://localhost:6274/oauth/callback",
